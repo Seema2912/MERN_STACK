@@ -8,6 +8,7 @@ const userRoute = require("./Routes/userRoutes");
 
 dotenv.config({ path: path.join(__dirname, "./config.env") });
 app.use(express.json());
+
 app.use(cors());
 app.options("*", cors());
 
